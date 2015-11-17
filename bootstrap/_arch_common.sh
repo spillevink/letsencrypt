@@ -23,5 +23,5 @@ deps="
 missing=$(pacman -T $deps)
 
 if [ "$missing" ]; then
-  pacman -S --needed $missing
+  pacman -Sy --needed $missing
 fi
